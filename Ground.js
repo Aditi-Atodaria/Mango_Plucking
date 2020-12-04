@@ -1,14 +1,17 @@
-class Ground{
-    constructor(){
-        var opt = {
-            isStatic : true
-        }
-        this.ground = Bodies.rectangle(200,790,2400,10,opt);
-        World.add(world,this.ground);
+class Ground {
+    constructor(x,y,width,height) {
+      var options = {
+          isStatic: true
+      }
+      this.body = Bodies.rectangle(x,y,width,height,options);
+      this.width = width;
+      this.height = height;
+      World.add(world, this.body);
     }
     display(){
-        rectMode(CENTER);
-        fill("yellow")
-        rect(this.ground.position.x,this.ground.position.y,2400,10);
+      var pos =this.body.position;
+      rectMode(CENTER);
+      fill("brown");
+      rect(pos.x, pos.y, this.width, this.height);
     }
-}
+  };
