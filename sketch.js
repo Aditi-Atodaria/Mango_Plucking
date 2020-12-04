@@ -51,7 +51,7 @@ function setup() {
 	//Create stone object
 	stone = new Stone(100,720);
 	//Create sling object by passing stone body and points(x,y)
-	 slingshot = new SlingShot(stone.body,{x:200, y:50});
+	// slingshot = new SlingShot(stone.body,{x:200, y:50});
 	//slingshot = new SlingShot(boy.body,{x:200, y:50});
 	
 	Engine.run(engine);
