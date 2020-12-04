@@ -50,6 +50,7 @@ function setup() {
 
 	//Create stone object
 	stone = new Stone(100,720);
+	 ground = new Ground(600,height,1200,20);
 	//Create sling object by passing stone body and points(x,y)
 	// slingshot = new SlingShot(stone.body,{x:200, y:50});
 	//slingshot = new SlingShot(boy.body,{x:200, y:50});
@@ -76,6 +77,7 @@ function draw() {
    mango8.display();
    mango9.display();
    mango10.display();
+   ground.display();
 
   //detect collision between stone and all the mangoes using detectcollision()
 
