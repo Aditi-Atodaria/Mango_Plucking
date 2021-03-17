@@ -5,7 +5,7 @@ class Mango{
             restitution:0,
             friction:1
         }
-        this.body = Bodies.rectangle(x,y,100,100,options);
+        this.body = Bodies.rectangle(x,y,80,80,options);
         this.image = loadImage("mango.png");
         World.add(world,this.body);
 
